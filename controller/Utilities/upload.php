@@ -1,6 +1,10 @@
 <?php 
 include dirname(__FILE__) . '/validate.php';
+include dirname(__FILE__) . '/../Model/bookVO.php';
+include dirname(__FILE__) . '/../DAO/bookDAO.php';
+
 $validate = new Validate();
+$bookDAO = new BookDAO();
 
 if (!empty($_FILES)) {
 	$file = $_FILES["xmlFile"];
@@ -11,7 +15,18 @@ if (!empty($_FILES)) {
 			$xml = simplexml_load_string($xml_string);
 			$jsonString = json_encode($xml);
 			$data = json_decode($jsonString, true);
-			var_dump($data);
+			$data = $data["Book"];
+			for ($i=0; $i < count($data); $i++) { 
+				$row = $data[$i];
+				$book = new BookVO($row["Title"], 
+					$row["Author"],
+					$row["Country"],
+					$row["Language"],
+					$row["Price"],
+					$row["Quantity"]);
+				$bookDAO->save($book);
+			}
+			
 		}else{
 			echo $validate->getFileError();
 		}

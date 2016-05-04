@@ -7,6 +7,17 @@ class BookVO {
     protected $language;
     protected $price;
     protected $quantity;
+
+    //public function BookVO(){}
+
+    public function __construct($title, $author, $country, $language, $price, $quantity) {
+        $this->setTitle($title);
+        $this->setAuthor($author);
+        $this->setCountry($country);
+        $this->setLanguage($language);
+        $this->setPrice($price);
+        $this->setQuantity($quantity);
+    }
     
     public function setId($id) {
         $this->id = $id;
