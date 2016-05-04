@@ -17,6 +17,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			echo $bookDAO->getByPriceComparison(">=100");
 		}else if (strcmp($filter, "4") === 0) {
 			echo $bookDAO->getByPriceComparison("<100");
+		}else if (strcmp($filter, "5") === 0) {
+			echo $bookDAO->dumpTable();
 		}else {
 			echo "Error";
 		}

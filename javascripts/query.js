@@ -72,8 +72,13 @@ $(function(){
 		$.post("controller/facade.php", {
 			filter: filter
 		}, function(data) {
-			var formattedData = formatData(data);
-			updateTableData(formattedData);
+			if (data===1) {
+				swal("All books are gone!", "Please upload books.xml again", "success");
+				updateTableData([]);
+			}else{
+				var formattedData = formatData(data);
+				updateTableData(formattedData);
+			}
 		}, "json");
 	}
 
@@ -109,5 +114,8 @@ $(function(){
 	});
 	$("#priceUnder100").click(function(){
 		filterTable(4);
+	});
+	$("#erase").click(function(){
+		filterTable(5);
 	});
 });

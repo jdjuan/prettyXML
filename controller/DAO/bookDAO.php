@@ -35,6 +35,12 @@ class BookDAO {
 		return json_encode($this->connection->select($sql));
 	}
 
+    // Removes all registries from table
+	public function dumpTable() {
+		$sql = "DELETE FROM books";
+		return $this->connection->query($sql);
+	}
+
     //Saves the supplied book to the database.
 	public function save($bookVO) {
 		$affectedRows = 0;

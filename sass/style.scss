@@ -21,6 +21,15 @@ label{
 	font-weight: 100;
 }
 
+a {
+	color: $lightestColor;
+	text-decoration: none;
+	&:hover{
+		color: $lightestColor;
+		text-decoration: none;
+	}
+}
+
 h1, h2{
 	margin: 0rem;
 	padding: 0rem;
@@ -32,7 +41,7 @@ h1, h2{
 	background-color: $darkColor;
 	text-align: center;
 }
-	
+
 h1{
 	font-weight: 800;
 	font-size: 7rem;
@@ -51,6 +60,11 @@ h1{
 	margin-top: 1rem;
 	font-weight: 100;
 	background-color: $baseColor;
+}
+
+.back {
+	position: absolute; 
+	left: 10px
 }
 
 .actionButton{
