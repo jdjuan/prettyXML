@@ -1,5 +1,92 @@
-@import 'variables'; 
+// Import Sass Variables in order to use them across the styles.
+@import "variables";
+
+// Predefined utilities
 @import 'mixins'; 
 @import "compass/css3";
 @import "compass/utilities";
+
+// Responsive Design Plugin
 @import "include-media";
+
+// Import other styles
+@import "upload";
+
+html {
+	height: 100%;
+}
+body {
+	background-color: $darkRed;
+	height: 100%;
+}
+
+h1, h2{
+	margin: 0rem;
+	padding: 0rem;
+	font-family: "Raleway";
+}
+
+.title{
+	@include box-shadow($darkRed 2px 2px 10px);
+	background-color: $yellow;
+	text-align: center;
+}
+
+h1{
+	font-weight: 800;
+	font-size: 7rem;
+	color: $darkRed;
+	padding: 1rem;
+	padding-bottom: 0rem;
+	@include media("<medium"){
+		font-size: 5rem;
+	}
+}
+
+.subtitle{
+	color: $darkRed;
+	font-size: 2.3rem;
+	padding: 0.6rem;
+	margin-top: 1rem;
+	background-color: lighten($yellow, 7%);
+}
+
+.left{
+	text-align: right;
+	@include media("<medium"){
+		text-align: center;
+	}
+}
+.right{
+	text-align: left;
+	@include media("<medium"){
+		text-align: center;
+	}
+}
+
+.actionButton{
+	margin-top: 15rem;
+	width: 35rem;
+	font-size: 5rem;
+	font-weight: bold;
+	font-family: "Raleway";
+	@include media("<medium"){
+		margin-top: 7.5rem;
+		width: 25rem;
+	}
+}
+
+footer{
+	text-align:center;
+}
+
+.footer{
+	width:100%;
+	color: white;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	margin: 0;
+	padding: 0.3rem;
+	background-color: lighten($darkRed, 10%);
+}

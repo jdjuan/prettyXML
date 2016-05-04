@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Pretty XML</title>
+	<title>Upload XML</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
 	<meta charset="UTF-8">
 	<!-- FavIcon -->
 	<!-- <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32"> -->
 	<!-- Default Compass Styles -->
 	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-	<link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />	
+	<link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+	<!-- SweetAlert Styles -->
+	<link href="bower_components/sweetalert/dist/sweetalert.css" rel="stylesheet" type="text/css" />
 	<!-- Boostrap Styles -->
 	<link href="stylesheets/styles.css" rel="stylesheet" type="text/css" />
 	<!-- Main Custom Styles -->
@@ -19,22 +21,25 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<!-- Latest compiled and minified Bootstrap JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<!-- Sweet Alert JS -->
+	<script src="bower_components/sweetalert/dist/sweetalert.min.js"></script>
 	<!-- Custom Javascript -->
-	<script src="javascripts/index.js"></script>
+	<script src="javascripts/upload.js"></script>
 </head>
 <body>
 	<div class="title">
 		<h1>Pretty XML</h1>
 		<h2 class="subtitle">Upload, parse and display XML in a beautiful way</h2>
 	</div>
-	<div class="buttons">
-		<div class="col-md-6 left">
-			<button id="upload" class="actionButton btn btn-default btn-lg">Upload</button>
-		</div>
-		<div class="col-md-6 right">
-			<button id="query" class="actionButton btn btn-default btn-lg">Query</button>
-		</div>
+	<div class="formWrapper">
+		<form class="uploadForm" action="controller/utilities/upload.php/" method="post" enctype="multipart/form-data">
+			<span class="btn btn-lg btn-default btn-file">Browse
+				<input type="file" required name="xmlFile">
+			</span>
+			<br>
+			<button type="submit" class="btn btn-lg btn-success submit">Upload</button>
+		</form>
 	</div>
-	<footer><p class="footer">&copy; 2016 Juan Herrera - www.juandavidherra.com</p></footer>
+	<footer><p class="footer">&copy; 2016 Juan Herrera - juandavidherra.com</p></footer>
 </body>
 </html>
