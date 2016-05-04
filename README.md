@@ -9,8 +9,9 @@
 4. jQuery (latest build)
 5. [DataTables](https://datatables.net/) (jQuery Plugin)
 6. [Sweet Alert](http://t4t5.github.io/sweetalert/)
-6. [Include-media](https://github.com/eduardoboucas/include-media) (Responsive Design purposes)
-6. [LOL Colors](http://www.lolcolors.com/) (Color palette for designing purposes)
+7. [Include-media](https://github.com/eduardoboucas/include-media) (Responsive Design purposes)
+8. [LOL Colors](http://www.lolcolors.com/) (Color palette for designing purposes)
+9. [Web Starter Kit](https://github.com/jdjuan/web-starter-kit)
 
 ###Back-End
 1. PHP 5.6.16
