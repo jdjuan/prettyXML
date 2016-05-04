@@ -3,12 +3,11 @@
 
 // Variables to quickly and easily change the accent colour across the site.
 $white: #FFF;
-$lightGray : #F1F2F2;
-$red : #D83454;
-$darkGray : #434244;
-$gray : #CBCBCB;
+$yellow : #f6ea8c;
+$lightRed : #f26d5b;
+$red : #c03546;
+$darkRed : #492540;
 $fontSize : 5.5vw;
-$circlesColliding : 700px;
 
 //Include-Media mixin variables
-$breakpoints: (very-small: 590px, small: 740px, circlesColliding: $circlesColliding, medium: 900px, large: 1100px);
+$breakpoints: (very-small: 590px, small: 740px, medium: 992px, large: 1100px);
