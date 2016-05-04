@@ -1,143 +1,88 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600);
-/* line 1, ../sass/_upload.scss */
-.btn-file {
-  position: relative;
-  overflow: hidden;
-  margin: 5rem;
-  margin-top: 8rem;
-  font-size: 5rem;
-}
-
-/* line 8, ../sass/_upload.scss */
-.btn-file input[type=file] {
-  position: absolute;
-  top: 0;
-  right: 0;
-  min-width: 100%;
-  min-height: 100%;
-  font-size: 100px;
-  text-align: right;
-  filter: alpha(opacity=0);
-  opacity: 0;
-  outline: none;
-  background: white;
-  cursor: inherit;
-  display: block;
-}
-
-/* line 24, ../sass/_upload.scss */
-.submit {
-  font-size: 5rem;
-  width: 30rem;
-}
-
-/* line 29, ../sass/_upload.scss */
-.uploadForm {
-  text-align: center;
-}
-
-/* line 15, ../sass/style.scss */
+/* line 12, ../sass/style.scss */
 html {
   height: 100%;
 }
 
-/* line 18, ../sass/style.scss */
+/* line 15, ../sass/style.scss */
 body {
-  background-color: #492540;
+  background-color: #a8c6c7;
   height: 100%;
 }
 
-/* line 23, ../sass/style.scss */
+/* line 20, ../sass/style.scss */
+label {
+  font-weight: 100;
+}
+
+/* line 24, ../sass/style.scss */
 h1, h2 {
   margin: 0rem;
   padding: 0rem;
   font-family: "Raleway";
 }
 
-/* line 29, ../sass/style.scss */
+/* line 30, ../sass/style.scss */
 .title {
-  -moz-box-shadow: #492540 2px 2px 10px;
-  -webkit-box-shadow: #492540 2px 2px 10px;
-  box-shadow: #492540 2px 2px 10px;
-  background-color: #f6ea8c;
+  -moz-box-shadow: #1f4e5f 2px 2px 10px;
+  -webkit-box-shadow: #1f4e5f 2px 2px 10px;
+  box-shadow: #1f4e5f 2px 2px 10px;
+  background-color: #1f4e5f;
   text-align: center;
 }
 
-/* line 35, ../sass/style.scss */
+/* line 36, ../sass/style.scss */
 h1 {
   font-weight: 800;
   font-size: 7rem;
-  color: #492540;
+  color: #f4f7f7;
   padding: 1rem;
   padding-bottom: 0rem;
 }
 @media (max-width: 991px) {
-  /* line 35, ../sass/style.scss */
+  /* line 36, ../sass/style.scss */
   h1 {
     font-size: 5rem;
   }
 }
 
-/* line 46, ../sass/style.scss */
+/* line 47, ../sass/style.scss */
 .subtitle {
-  color: #492540;
+  color: #f4f7f7;
   font-size: 2.3rem;
   padding: 0.6rem;
   margin-top: 1rem;
-  background-color: #f9f0ad;
+  font-weight: 100;
+  background-color: #79a8a9;
 }
 
-/* line 54, ../sass/style.scss */
-.left {
-  text-align: right;
-}
-@media (max-width: 991px) {
-  /* line 54, ../sass/style.scss */
-  .left {
-    text-align: center;
-  }
-}
-
-/* line 60, ../sass/style.scss */
-.right {
-  text-align: left;
-}
-@media (max-width: 991px) {
-  /* line 60, ../sass/style.scss */
-  .right {
-    text-align: center;
-  }
-}
-
-/* line 67, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 .actionButton {
-  margin-top: 15rem;
-  width: 35rem;
-  font-size: 5rem;
   font-weight: bold;
   font-family: "Raleway";
 }
 @media (max-width: 991px) {
-  /* line 67, ../sass/style.scss */
+  /* line 56, ../sass/style.scss */
   .actionButton {
     margin-top: 7.5rem;
     width: 25rem;
   }
 }
 
-/* line 79, ../sass/style.scss */
+/* line 65, ../sass/style.scss */
 footer {
   text-align: center;
 }
 
-/* line 83, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 .footer {
   width: 100%;
-  color: white;
+  color: #f4f7f7;
   text-align: center;
   position: fixed;
   bottom: 0;
   margin: 0;
   padding: 0.3rem;
-  background-color: #6b365e;
+  font-weight: 100;
+  background-color: #1f4e5f;
 }

@@ -1,0 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600);
+/* line 7, ../sass/index.scss */
+.left {
+  text-align: right;
+}
+@media (max-width: 991px) {
+  /* line 7, ../sass/index.scss */
+  .left {
+    text-align: center;
+  }
+}
+
+/* line 13, ../sass/index.scss */
+.right {
+  text-align: left;
+}
+@media (max-width: 991px) {
+  /* line 13, ../sass/index.scss */
+  .right {
+    text-align: center;
+  }
+}
+
+/* line 20, ../sass/index.scss */
+.big {
+  margin-top: 15rem;
+  width: 35rem;
+  font-size: 5rem;
+}

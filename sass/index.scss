@@ -1,0 +1,24 @@
+// Import Sass Variables in order to use them across the styles.
+@import "variables";
+
+// Responsive Design Plugin
+@import "include-media";
+
+.left{
+	text-align: right;
+	@include media("<medium"){
+		text-align: center;
+	}
+}
+.right{
+	text-align: left;
+	@include media("<medium"){
+		text-align: center;
+	}
+}
+
+.big{
+	margin-top: 15rem;
+	width: 35rem;
+	font-size: 5rem;
+}

@@ -9,15 +9,16 @@
 // Responsive Design Plugin
 @import "include-media";
 
-// Import other styles
-@import "upload";
-
 html {
 	height: 100%;
 }
 body {
-	background-color: $darkRed;
+	background-color: lighten($baseColor,15%);
 	height: 100%;
+}
+
+label{
+	font-weight: 100;
 }
 
 h1, h2{
@@ -27,15 +28,15 @@ h1, h2{
 }
 
 .title{
-	@include box-shadow($darkRed 2px 2px 10px);
-	background-color: $yellow;
+	@include box-shadow($darkColor 2px 2px 10px);
+	background-color: $darkColor;
 	text-align: center;
 }
-
+	
 h1{
 	font-weight: 800;
 	font-size: 7rem;
-	color: $darkRed;
+	color: $lightestColor;
 	padding: 1rem;
 	padding-bottom: 0rem;
 	@include media("<medium"){
@@ -44,30 +45,15 @@ h1{
 }
 
 .subtitle{
-	color: $darkRed;
+	color: $lightestColor;
 	font-size: 2.3rem;
 	padding: 0.6rem;
 	margin-top: 1rem;
-	background-color: lighten($yellow, 7%);
-}
-
-.left{
-	text-align: right;
-	@include media("<medium"){
-		text-align: center;
-	}
-}
-.right{
-	text-align: left;
-	@include media("<medium"){
-		text-align: center;
-	}
+	font-weight: 100;
+	background-color: $baseColor;
 }
 
 .actionButton{
-	margin-top: 15rem;
-	width: 35rem;
-	font-size: 5rem;
 	font-weight: bold;
 	font-family: "Raleway";
 	@include media("<medium"){
@@ -82,11 +68,12 @@ footer{
 
 .footer{
 	width:100%;
-	color: white;
+	color: $lightestColor;
 	text-align: center;
 	position: fixed;
 	bottom: 0;
 	margin: 0;
 	padding: 0.3rem;
-	background-color: lighten($darkRed, 10%);
+	font-weight: 100;
+	background-color: $darkColor;
 }

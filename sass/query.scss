@@ -1,0 +1,25 @@
+// Import Sass Variables in order to use them across the styles.
+@import "variables";
+
+// Responsive Design Plugin
+@import "include-media";
+
+
+body {
+	background-color: $lightestColor;
+	// background-color: lighten($yellow, 20%);
+	height: 100%;
+}
+
+.mainWrapper{
+	padding-left: 5rem;
+	padding-right: 5rem;
+}
+
+.reports{
+	text-align: center;
+}
+.filter{
+	margin-right: 1rem;	
+	margin-top: 2rem;
+}

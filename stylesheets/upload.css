@@ -1,0 +1,37 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600);
+/* line 8, ../sass/upload.scss */
+.btn-file {
+  position: relative;
+  overflow: hidden;
+  margin: 3rem;
+  margin-top: 8rem;
+  font-size: 5rem;
+}
+
+/* line 15, ../sass/upload.scss */
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  background: white;
+  cursor: inherit;
+  display: block;
+}
+
+/* line 31, ../sass/upload.scss */
+.submit {
+  font-size: 5rem;
+  width: 30rem;
+}
+
+/* line 36, ../sass/upload.scss */
+.uploadForm {
+  text-align: center;
+}

@@ -1,6 +1,6 @@
 $(function(){
 	$('.btn-file :file').on('fileselect', function(event, numFiles, label) {
-		swal("Great!", label+" is ready to be uploaded!", "success");
+		swal(label + " is ready to be uploaded!", "Press upload to continue", "success");
 	});
 	$(document).on('change', '.btn-file :file', function() {
 		var input = $(this);

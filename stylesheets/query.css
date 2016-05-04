@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600);
+/* line 8, ../sass/query.scss */
+body {
+  background-color: #f4f7f7;
+  height: 100%;
+}
+
+/* line 14, ../sass/query.scss */
+.mainWrapper {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+/* line 19, ../sass/query.scss */
+.reports {
+  text-align: center;
+}
+
+/* line 22, ../sass/query.scss */
+.filter {
+  margin-right: 1rem;
+  margin-top: 2rem;
+}
