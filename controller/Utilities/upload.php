@@ -26,7 +26,7 @@ if (!empty($_FILES)) {
 					$row["Quantity"]);
 				$bookDAO->save($book);
 			}
-			header("Location: ../../../query.html");
+			header("Location: ../../query.html");
 		}else{
 			echo $validate->getFileError();
 		}
