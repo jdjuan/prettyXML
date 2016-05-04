@@ -38,21 +38,76 @@ var dataSet = [
 ];
 
 $(function(){
-	$('#dataTable').DataTable( {
-		data: dataSet,
-		columns: [
-		{ title: "Name" },
-		{ title: "Position" },
-		{ title: "Office" },
-		{ title: "Extn." },
-		{ title: "Start date" },
-		{ title: "Salary" }
-		],
-		"paging":   false,
-		"info":     false,
-		"order": [[ 3, "desc" ]],
-		"scrollY": "300px",
-		"scrollX": true,
-		"scrollCollapse": true,
-	} );
+
+	var filters = {"All" : 0, "Spanish":1, "French": 2, "Over100":3, "Under100": 4};
+	var table = "";
+
+	init();
+
+	function init(){
+		initTable();
+		filterTable(filters["All"]);
+	}
+
+	function initTable(){
+		table = $('#dataTable').DataTable( {
+			columns: [
+			{ title: "Id" },
+			{ title: "Title" },
+			{ title: "Author" },
+			{ title: "Country" },
+			{ title: "Language" },
+			{ title: "Price" },
+			{ title: "Quantity" }],
+			"paging":   false,
+			"info":     false,
+			"order": [[ 1, "desc" ]],
+			"scrollY": "300px",
+			"scrollX": true,
+			"scrollCollapse": true,
+		} );
+	}
+
+	function filterTable(filter){
+		$.post("controller/facade.php", {
+			filter: filter
+		}, function(data) {
+			var formattedData = formatData(data);
+			updateTableData(formattedData);
+		}, "json");
+	}
+
+	function formatData(data){
+		var formattedData=[];
+		for (var i = 0; i < data.length; i++) {
+			var row = data[i];
+			var formattedRow = [];	
+			for (var column in row){
+				formattedRow.push(row[column]);
+			}
+			formattedData.push(formattedRow);
+		}
+		return formattedData;
+	}
+
+	function updateTableData(data){
+		table.clear();
+		table.rows.add(data).draw();
+	}
+
+	$("#allBooks").click(function(){
+		filterTable(0);
+	});
+	$("#spanishBooks").click(function(){
+		filterTable(1);
+	});
+	$("#frenchBooks").click(function(){
+		filterTable(2);
+	});
+	$("#priceOver100").click(function(){
+		filterTable(3);
+	});
+	$("#priceUnder100").click(function(){
+		filterTable(4);
+	});
 });
