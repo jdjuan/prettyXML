@@ -9,8 +9,8 @@
     position: relative;
     overflow: hidden;
     margin: 3rem;
-    margin-top: 8rem;
     font-size: 5rem;
+    width: 30rem;
 }
 .btn-file input[type=file] {
     position: absolute;
@@ -35,4 +35,8 @@
 
 .uploadForm{
     text-align: center;
+    margin-top: 11rem;
+    @include media("<medium"){
+        margin-top: 7rem;
+    }
 }

@@ -21,4 +21,9 @@
 	margin-top: 15rem;
 	width: 35rem;
 	font-size: 5rem;
+	@include media("<medium"){
+		margin-top: 8rem;
+		width: 30rem;
+		font-size: 4rem;
+	}
 }

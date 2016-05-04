@@ -27,3 +27,11 @@
   width: 35rem;
   font-size: 5rem;
 }
+@media (max-width: 991px) {
+  /* line 20, ../sass/index.scss */
+  .big {
+    margin-top: 8rem;
+    width: 30rem;
+    font-size: 4rem;
+  }
+}

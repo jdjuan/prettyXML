@@ -4,8 +4,8 @@
   position: relative;
   overflow: hidden;
   margin: 3rem;
-  margin-top: 8rem;
   font-size: 5rem;
+  width: 30rem;
 }
 
 /* line 15, ../sass/upload.scss */
@@ -34,4 +34,11 @@
 /* line 36, ../sass/upload.scss */
 .uploadForm {
   text-align: center;
+  margin-top: 11rem;
+}
+@media (max-width: 991px) {
+  /* line 36, ../sass/upload.scss */
+  .uploadForm {
+    margin-top: 7rem;
+  }
 }

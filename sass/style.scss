@@ -64,7 +64,10 @@ h1{
 
 .back {
 	position: absolute; 
-	left: 10px
+	left: 10px;
+	@include media("<medium"){
+		display: none;
+	}
 }
 
 .actionButton{

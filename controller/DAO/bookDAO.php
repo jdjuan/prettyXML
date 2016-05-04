@@ -2,11 +2,13 @@
 
 include dirname(__FILE__) . '/../Connection/connection.php';
 
+//Data Access Object class for Book. It contains several methods used across the application
+
 class BookDAO {
 	protected $connect;
 	protected $db;
 
-    // Attempts to initialize the database connection using the supplied info.
+    // Attempts to initialize the database connection.
 	public function BookDAO() {
 		$this->connection = new Connection();
 	}
@@ -48,8 +50,7 @@ class BookDAO {
 		if($bookVO->getId() != "") {
 			$currentBookVO = $this->getByBookId($bookVO->getId());
 		}
-        // If the query returned a row then update,
-        // otherwise insert a new book.
+        // If the query returned a row then update, otherwise insert a new book.
 		if(sizeof($currentBookVO) > 0) {
 			$sql = "UPDATE books SET ".
 			"title='".$bookVO->getTitle()."', ".

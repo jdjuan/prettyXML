@@ -1,4 +1,7 @@
 <?php 
+
+//Book class containing the same attributes as the database table books.
+
 class BookVO {
     protected $id;
     protected $title;
@@ -7,8 +10,6 @@ class BookVO {
     protected $language;
     protected $price;
     protected $quantity;
-
-    //public function BookVO(){}
 
     public function __construct($title, $author, $country, $language, $price, $quantity) {
         $this->setTitle($title);

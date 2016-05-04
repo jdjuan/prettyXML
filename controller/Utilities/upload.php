@@ -1,4 +1,8 @@
 <?php 
+//Upload.php is in charge of receiving, validating and storing the information
+//coming from the books.xml file.
+//the PHP function simplexml_load_string() was used for XML parsing
+
 include dirname(__FILE__) . '/validate.php';
 include dirname(__FILE__) . '/../Model/bookVO.php';
 include dirname(__FILE__) . '/../DAO/bookDAO.php';

@@ -22,3 +22,8 @@ body {
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
+
+/* line 28, ../sass/query.scss */
+.data {
+  padding-bottom: 5rem;
+}

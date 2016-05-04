@@ -72,26 +72,32 @@ h1 {
   position: absolute;
   left: 10px;
 }
+@media (max-width: 991px) {
+  /* line 65, ../sass/style.scss */
+  .back {
+    display: none;
+  }
+}
 
-/* line 70, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
 .actionButton {
   font-weight: bold;
   font-family: "Raleway";
 }
 @media (max-width: 991px) {
-  /* line 70, ../sass/style.scss */
+  /* line 73, ../sass/style.scss */
   .actionButton {
     margin-top: 7.5rem;
     width: 25rem;
   }
 }
 
-/* line 79, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 footer {
   text-align: center;
 }
 
-/* line 83, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 .footer {
   width: 100%;
   color: #f4f7f7;

@@ -1,7 +1,11 @@
 <?php 
 
+//Simple facade pattern implemented in order to handle the different type of request made
+//when filtering information or erasing it all.
+
 include dirname(__FILE__) . '/Model/bookVO.php';
 include dirname(__FILE__) . '/DAO/bookDAO.php';
+
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	if (!empty($_POST)) {
@@ -24,5 +28,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		}
 	}
 }
-
 ?>

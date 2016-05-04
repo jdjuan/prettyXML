@@ -1,6 +1,17 @@
 #Pretty XML - Documentation
 
-##Tools
+##Features
+1. XML upload form for `books.xml`
+2. Query interface using a beautiful table. It comes with the perks of ordering and filtering
+3. Specific case filters such as:
+`All books`
+`Spanish books`
+`French books`
+`Book's price over or equal to 100 `
+`Book's price under 100`
+4. Optimized for mobile display so data is visible even in small devices
+
+##Tools Used
 
 ###Front-End
 1. HTML5
@@ -24,8 +35,6 @@
 3. phpMyAdmin
 3. Bower
 4. npm
-5. Composer
 
 ###UI - UX
 Sass was included in this project in order to allow the back-end developer to easily change the accent colors across the website.
-
